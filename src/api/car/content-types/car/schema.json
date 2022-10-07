@@ -26,6 +26,12 @@
     },
     "Description": {
       "type": "richtext"
+    },
+    "auction_sales": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::auction-sale.auction-sale",
+      "inversedBy": "cars"
     }
   }
 }

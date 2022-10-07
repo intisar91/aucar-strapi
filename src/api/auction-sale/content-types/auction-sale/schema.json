@@ -4,7 +4,8 @@
   "info": {
     "singularName": "auction-sale",
     "pluralName": "auction-sales",
-    "displayName": "auction sale"
+    "displayName": "auction sale",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,12 @@
     },
     "Title": {
       "type": "string"
+    },
+    "cars": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::car.car",
+      "inversedBy": "auction_sales"
     }
   }
 }
